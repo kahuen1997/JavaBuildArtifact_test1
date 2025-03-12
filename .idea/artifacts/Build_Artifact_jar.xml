@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Build_Artifact:jar">
+    <output-path>$USER_HOME$/OneDrive/Desktop</output-path>
+    <root id="archive" name="Build_Artifact.jar">
+      <element id="module-output" name="Build_Artifact" />
+    </root>
+  </artifact>
+</component>

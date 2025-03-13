@@ -1,3 +1,5 @@
+package org.example;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,7 +14,7 @@ public class JframeApp {
         frame.getContentPane().setBackground(Color.BLACK);
 
         // 設定圖片
-        String imagePath = "C:\\Program Files\\Intellij\\IdeaProjects\\Build_Artifact\\Photo_1\\artworks-BgAvPVLPRoPB1Yhl-pfcIyA-t500x500.jpg";
+        String imagePath = "C:\\Program Files\\Intellij\\IdeaProjects\\Build_Artifact\\src\\Photo_1\\IMG_4731.jpg";
         ImageIcon image1 = new ImageIcon(imagePath);
 
         // 確認圖片是否載入成功
@@ -30,6 +32,6 @@ public class JframeApp {
 
     // 🔹 main 方法，程式從這裡開始執行
     public static void main(String[] args) {
-        new JframeApp(); // 創建 JframeApp 物件，執行建構函式
+        new JframeApp(); // 創建 org.example.JframeApp 物件，執行建構函式
     }
 }

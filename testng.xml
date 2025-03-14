@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Program Files/Intellij/IdeaProjects/Build_Artifact/src/test/java/testng.java">
+        <classes>
+           <class name="testng"></class>
+        </classes>
+    </test>
+</suite>

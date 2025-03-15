@@ -25,7 +25,8 @@ public class testng {
 
     @AfterClass
     public void teardown(){
-        driver.quit();
         driver.close();
+        driver.quit();
+
     }
 }

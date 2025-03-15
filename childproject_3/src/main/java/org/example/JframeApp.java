@@ -14,7 +14,7 @@ public class JframeApp {
         frame.getContentPane().setBackground(Color.BLACK);
 
         // 設定圖片
-        String imagePath = "C:\\Program Files\\Intellij\\IdeaProjects\\Build_Artifact\\src\\Photo_1\\IMG_4731.jpg";
+        String imagePath = "C:\\Program Files\\Intellij\\IdeaProjects\\Build_Artifact\\childproject_3\\src\\Photo_1\\pexels-adi-k-182036-1471294.jpg";
         ImageIcon image1 = new ImageIcon(imagePath);
 
         // 確認圖片是否載入成功

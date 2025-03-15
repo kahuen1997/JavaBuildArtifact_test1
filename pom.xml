@@ -7,6 +7,12 @@
     <groupId>org.example</groupId>
     <artifactId>Build_Artifact</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>childproject_1</module>
+        <module>childproject_2</module>
+        <module>childproject_3</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
@@ -15,45 +21,35 @@
         <suiteXmlFile>testng.xml</suiteXmlFile>
     </properties>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.11.0</version>
-            <scope>test</scope>
-        </dependency>
+<!--    <dependencies>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.testng/testng &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.testng</groupId>-->
+<!--            <artifactId>testng</artifactId>-->
+<!--            <version>7.11.0</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.29.0</version>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-java</artifactId>-->
+<!--            <version>4.29.0</version>-->
+<!--        </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-api</artifactId>
-            <version>4.29.0</version>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-api</artifactId>-->
+<!--            <version>4.29.0</version>-->
+<!--        </dependency>-->
 
-    </dependencies>
+<!--    </dependencies>-->
 
     <build>
+        <pluginManagement>
         <plugins>
-            <!--            exec-->
-            <!-- 用來運行主類 -->
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>3.5.0</version>
-                <configuration>
-                    <mainClass>org.example.JFrameApp</mainClass>
-                </configuration>
-            </plugin>
-
-
+            
             <!--            jar-->
             <!-- 用來打包 JAR 文件 -->
             <plugin>
@@ -86,6 +82,7 @@
             </plugin>
 
             <!--          surefire-->
+            <!--            test-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -96,6 +93,7 @@
             </plugin>
 
             <!--           failsafe-->
+            <!--            verify ,intergrate Test-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
@@ -110,6 +108,7 @@
                 </executions>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 
 </project>

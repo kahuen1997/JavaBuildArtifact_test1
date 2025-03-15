@@ -46,4 +46,14 @@
             </plugin>
         </plugins>
     </build>
+
+<!--    skip test-->
+    <profiles>
+        <profile>
+            <id>skip-tests</id>
+            <properties>
+                <skipTests>true</skipTests>
+            </properties>
+        </profile>
+    </profiles>
 </project>
